@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 5.5em;
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    font-weight: lighter;
+  }
+
+  h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+    color: #717171;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1em;
+    font-weight: lighter;
+    color: #717171;
+    letter-spacing: 0.05em;
+  }
+
+/* ================= Heading ================= */
+  .heading {
+      height: 50em;
+      background-size:cover;
+  }
+
+  .headingBg {
+    width: 45%;
+    margin: 0 auto;    
+    background-color:rgba(129,171,160,0.8) ;
+  }
+
+  .headingText{
+    color: white;
+    height: 50em;
+    padding: 40% 0;
+  }
+
+/* ================= About ================= */
+
+  .about {
+    background: #f3f0f1;
+    padding: 15% 10%;
+    text-align: left;
+    position: relative;
+  }
+
+/* ================= Skill ================= */
+
+.skill {
+  padding: 15% 10%;
+  text-align: left;
+}
+
+/* ================= Works ================= */
+
+.works {
+  background-color: #f3f0f1;
+  padding: 15% 10%;
+  text-align: left;
+  position: relative;
+}
+
+/* ================= Contact ================= */
+
+.contact {
+  height: 30em;
+  background-size:cover;
+}
+
+.contactBg {
+width: 45%;
+margin: 0 auto;    
+background-color:#fff ;
+}
+
+.contactText{
+height: 30em;
+padding: 25% 0;
+}
