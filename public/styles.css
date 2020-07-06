@@ -10,71 +10,101 @@
 
   h1 {
     font-family: 'Sacramento', cursive;
-    font-size: 5.5em;
+    font-size: 20vh;
     font-weight: lighter;
   }
 
   h2 {
     font-family: 'Sacramento', cursive;
-    font-size: 2.5em;
+    font-size: 8vh;
     font-weight: lighter;
   }
 
   h3 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 2em;
-    color: #717171;
+    font-size: 4vh;
+    /* color: #717171; */
     letter-spacing: 0.05em;
   }
 
   p {
     font-family: 'Abril Fatface', cursive;
-    font-size: 1em;
+    font-size: 2.5vh;
     font-weight: lighter;
-    color: #717171;
+    /* color: #717171; */
     letter-spacing: 0.05em;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+  /* ================= Navbar ================= */
+
+  .navbar {
+    font-family: 'Megrim', cursive;
+    height: 48px;
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+  }
+
+  .satoko {
+    float: left;
+    padding: 0 15px;
+    line-height: 48px;
+    list-style: none;
+  }
+
+  .navbar li {
+    float: right;
+    padding: 0 15px;
+    line-height: 48px;
+    list-style: none;
   }
 
 /* ================= Heading ================= */
   .heading {
-      height: 50em;
-      background-size:cover;
+    position: relative;
   }
-
-  .headingBg {
-    width: 45%;
-    margin: 0 auto;    
-    background-color:rgba(129,171,160,0.8) ;
-  }
-
+  
   .headingText{
     color: white;
-    height: 50em;
-    padding: 40% 0;
+    padding: 8vh 4vh;
+    background-color:rgba(129,171,160,0.8) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
 
 /* ================= About ================= */
 
   .about {
-    background: #f3f0f1;
-    padding: 15% 10%;
+    padding: 10% 10%;
+    color: #717171;
+    
+  }
+  .aboutText {
     text-align: left;
-    position: relative;
   }
 
 /* ================= Skill ================= */
 
 .skill {
   padding: 15% 10%;
-  text-align: left;
 }
 
 /* ================= Works ================= */
 
 .works {
   background-color: #f3f0f1;
-  padding: 15% 10%;
-  text-align: left;
+  padding: 15% 5%;
   position: relative;
 }
 
@@ -83,15 +113,24 @@
 .contact {
   height: 30em;
   background-size:cover;
+  position: relative;
+  color: #717171;
 }
 
-.contactBg {
-width: 45%;
-margin: 0 auto;    
-background-color:#fff ;
-}
 
 .contactText{
-height: 30em;
-padding: 25% 0;
+  padding: 30vh 2vh;
+  background-color:#fff ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* ================= Footer ================= */
+
+.footer {
+  color: #717171;
 }

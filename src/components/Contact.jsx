@@ -1,5 +1,26 @@
 import React from 'react';
 import backGround from './asset/img/portofolioFooter.jpg'
+import styled, { keyframes } from "styled-components";
+
+
+const StyledFooter = styled.footer`
+  width: 95%;
+  margin: 10px 3% 0 3%;
+  text-align: center;
+   //&.loaded {
+  background-image: url(${backGround});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   //}
+  height: 90vh;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+`;
+
 
 function Contact() {
     const style = {
@@ -7,17 +28,15 @@ function Contact() {
     }
     return (
 
-        <div style={style} className="contact">
-            <div className="contactBg">
-                <div className="contactText">
-                    <h1 >Contact</h1>
-                    <p>Interested In working with me?</p>
-                    <p>Reach me by email:</p>
-                    <br></br>
-                    <p>satoko.wakasa.2020@gmail.com</p>
-                </div>
+        <StyledFooter style={style} className="contact">
+            <div className="contactText">
+                <h2 >Contact</h2>
+                <p>Interested In working with me?</p>
+                <p>Drop me a line:</p>
+                <br></br>
+                <h3>satoko.wakasa.2020@gmail.com</h3>
             </div>
-        </div>
+        </StyledFooter>
     )
 }
 
