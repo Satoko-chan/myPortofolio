@@ -28,7 +28,7 @@ function Contact() {
     }
     return (
 
-        <StyledFooter style={style} className="contact">
+        <StyledFooter style={style} id="contact">
             <div className="contactText">
                 <h2 >Contact</h2>
                 <p>Interested In working with me?</p>

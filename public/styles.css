@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   body {
     text-align: center;
   }
@@ -66,6 +70,10 @@
     list-style: none;
   }
 
+  .navbar a {
+    color: #000;
+  }
+
 /* ================= Heading ================= */
   .heading {
     position: relative;
@@ -85,8 +93,8 @@
 
 /* ================= About ================= */
 
-  .about {
-    padding: 10% 10%;
+  #about {
+    padding: 10% 5%;
     color: #717171;
     
   }
@@ -96,13 +104,21 @@
 
 /* ================= Skill ================= */
 
-.skill {
+#skill {
   padding: 15% 10%;
+}
+
+#skill h3 {
+  padding-bottom: 5%;
+}
+
+#skill p {
+  padding-bottom: 2%;
 }
 
 /* ================= Works ================= */
 
-.works {
+#works {
   background-color: #f3f0f1;
   padding: 15% 5%;
   position: relative;
@@ -110,7 +126,7 @@
 
 /* ================= Contact ================= */
 
-.contact {
+#contact {
   height: 30em;
   background-size:cover;
   position: relative;
@@ -133,4 +149,10 @@
 
 .footer {
   color: #717171;
+}
+
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
 }

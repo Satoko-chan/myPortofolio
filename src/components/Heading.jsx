@@ -1,6 +1,10 @@
 import React from 'react';
 import backGround from './asset/img/portofolioLanding.jpg'
 import styled, { keyframes } from "styled-components";
+import Fade from '@material-ui/core/Fade';
+import Grow from '@material-ui/core/Grow';
+// import { Typography } from "@material-ui/core";
+// import { Skeleton } from '@material-ui/lab';
 
 const StyledHeader = styled.header`
   width: 90%;
@@ -19,16 +23,22 @@ const StyledHeader = styled.header`
 `;
 
 
-
 function Heading() {
-    return (
-        <StyledHeader className="heading star" id="star">
-            <div className="headingText">
-                <h2 >I'm</h2><h1> Satoko,</h1>
-                <h2>a Front-end Web Developer</h2>
-            </div>
-        </StyledHeader>
-    )
+  return (
+    // <Skeleton animation="wave" >
+    <StyledHeader className="heading">
+      <Fade in={true} timeout={1500}>
+        <div className="headingText">
+
+          <Fade in={true} timeout={2000}><h2>I'm</h2></Fade>
+          <Grow in={true} timeout={3000}><h1> Satoko,</h1></Grow>
+          <Fade in={true} timeout={7000}><h2>a Front-end Web Developer</h2></Fade>
+        </div>
+      </Fade>
+    </StyledHeader>
+    // </Skeleton>
+
+  )
 }
 
 export default Heading;

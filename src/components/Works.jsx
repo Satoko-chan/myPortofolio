@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 
 function Works() {
     return (
-        <div className="works">
+        <div id="works">
             <h2>Works</h2>
             {/* <Grid container spacing={5} className="workOne" style={{ marginBottom: "10em" }}>
                 <Grid item xs={12} sm={4} className="workImg">

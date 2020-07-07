@@ -1,13 +1,14 @@
 import React from 'react';
 import satoko from "./asset/img/profilePhoto.JPG"
 import Grid from '@material-ui/core/Grid';
+import { Wave } from 'react-animated-text';
 
 function About() {
 
     return (
-        <div className="about">
+        <div id="about">
             <h2>About</h2>
-            <h3 style={{ fontSize: "20vh", paddingBottom: "0.5em" }}>Satoko</h3>
+            <h3 style={{ fontSize: "20vh", paddingBottom: "0.5em", letterSpacing: "1vh" }}><Wave text="Satoko" speed="2" delay="0" ></Wave></h3>
             <Grid container spacing={5} >
                 <Grid item xs={12} md={4} className="aboutImg">
                     <img src={satoko} width="85%" alt="satokoImg" />

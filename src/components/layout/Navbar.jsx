@@ -7,10 +7,12 @@ function Navbar() {
 
         <div style={{ background: "rgba(255,255,255,1)" }} className="navbar">
             <ul>
-                <a className="satoko">Satoko</a>
-                <li>About</li>
-                <li>Works</li>
-                <li>Contact</li>
+                <a className="satoko" href="/">Satoko</a>
+                <div className="navBarRight">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
             </ul>
         </div>
 
