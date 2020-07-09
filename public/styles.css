@@ -31,7 +31,7 @@
   }
 
   p {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 2.5vh;
     font-weight: lighter;
     letter-spacing: 0.05em;
@@ -41,39 +41,8 @@
     object-fit: cover;
   }
 
-  /* ================= Navbar ================= */
-
-  .navbar {
-    font-family: 'Megrim', cursive;
-    height: 48px;
-    position: sticky;
-    top: 0;
-    background-color: #f8f8f8;
-    z-index: 9999;
-    margin: 0;
-    padding: 0;
-  }
-
-  .satoko {
-    float: left;
-    padding: 0 15px;
-    line-height: 48px;
-    list-style: none;
-  }
-
-  .navbar li {
-    float: right;
-    padding: 0 15px;
-    line-height: 48px;
-    list-style: none;
-  }
-
-  .navbar a {
-    color: #000;
-  }
-
 /* ================= Heading ================= */
-  .heading {
+  #heading {
     position: relative;
   }
   

@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
+import Fade from 'react-reveal/Fade';
 
 import YamaLog from "./asset/img/YamaLog.jpg"
 import Peace from "./asset/img/Peace.jpg"
@@ -128,36 +129,39 @@ function Works() {
             </Grid> */}
 
 
-            <div className={classes.root}>
-                {images.map(image => (
-                    <ButtonBase
-                        focusRipple
-                        key={image.title}
-                        className={classes.image}
-                        focusVisibleClassName={classes.focusVisible}
-                    >
-                        <span
-                            className={classes.imageSrc}
-                            style={{
-                                backgroundImage: `url(${image.url})`
-                            }}
-                        />
-                        <span className={classes.imageBackdrop} />
-                        <span className={classes.imageButton}>
-                            <Typography
-                                component="span"
-                                variant="subtitle1"
-                                color="inherit"
-                                className={classes.imageTitle}
-                            >
-                                <h3>{image.title}</h3>
-                                {image.comment}
-                                <span className={classes.imageMarked} />
-                            </Typography>
-                        </span>
-                    </ButtonBase>
-                ))}
-            </div>
+            <Fade right cascade>
+                <div className={classes.root}>
+                    {images.map(image => (
+                        <ButtonBase
+                            focusRipple
+                            key={image.title}
+                            className={classes.image}
+                            focusVisibleClassName={classes.focusVisible}
+                        >
+                            <span
+                                className={classes.imageSrc}
+                                style={{
+                                    backgroundImage: `url(${image.url})`
+                                }}
+                            />
+                            <span className={classes.imageBackdrop} />
+                            <span className={classes.imageButton}>
+                                <Typography
+                                    component="span"
+                                    variant="subtitle1"
+                                    color="inherit"
+                                    className={classes.imageTitle}
+                                >
+                                    <h3>{image.title}</h3>
+                                    {image.comment}
+                                    <span className={classes.imageMarked} />
+                                </Typography>
+                            </span>
+                        </ButtonBase>
+                    ))}
+                </div>
+            </Fade>
+
         </div>
     )
 }

@@ -18,12 +18,12 @@ const StyledHeader = styled.header`
 
 function Heading() {
   return (
-    <StyledHeader className="heading">
+    <StyledHeader id="heading">
       <Fade in={true} timeout={1500}>
         <div className="headingText">
           <Fade in={true} timeout={2000}><h2>I'm</h2></Fade>
           <Grow in={true} timeout={3000}><h1> Satoko,</h1></Grow>
-          <Fade in={true} timeout={6000}><h2>a Front-end Web Developer</h2></Fade>
+          <Fade in={true} timeout={5000}><h2>a Front-end Web Developer</h2></Fade>
         </div>
       </Fade>
     </StyledHeader>

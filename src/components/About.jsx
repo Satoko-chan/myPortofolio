@@ -4,6 +4,9 @@ import Grid from '@material-ui/core/Grid';
 import { Wave } from 'react-animated-text';
 import styled from "styled-components";
 
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 
 const StyledAboutSatoko = styled.h3`
     font-size: 15vh;
@@ -19,6 +22,11 @@ const StyledSatokoImg = styled.img`
   @media only screen and (min-width: 1000px) {
     width: 85%;
   }
+`;
+
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: #717171;
 `;
 
 function About() {
@@ -37,6 +45,12 @@ function About() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     <br></br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <StyledLink href="https://github.com/Satoko-chan">
+                        <GitHubIcon />
+                    </StyledLink>
+                    <StyledLink href="https://www.linkedin.com/in/satoko-wakasa-a26972167/">
+                        <LinkedInIcon />
+                    </StyledLink>
                 </Grid>
             </Grid>
         </div>
