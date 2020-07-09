@@ -118,23 +118,8 @@
 
 #works {
   background-color: #f3f0f1;
-  padding: 15% 5%;
+  padding: 10% 0;
   position: relative;
-}
-
-.work1 {
-  position: relative;
-}
-.work1:hover::after {
-  position: absolute;
-  z-index: 1;
-  background-color:#e6e04b;
-  opacity: 0.8;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  content: "Yamalog";
 }
 
 /* ================= Contact ================= */
