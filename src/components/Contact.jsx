@@ -31,7 +31,7 @@ function Contact() {
         <StyledFooter style={style} id="contact">
             <div className="contactText">
                 <h2 >Contact</h2>
-                <p>Interested In working with me?</p>
+                <p>Interested in working with me?</p>
                 <p>Drop me a line:</p>
                 <br></br>
                 <h3>satoko.wakasa.2020@gmail.com</h3>
