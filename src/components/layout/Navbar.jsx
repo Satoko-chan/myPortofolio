@@ -9,9 +9,9 @@ function Navbar() {
             <ul>
                 <a className="satoko" href="/">Satoko</a>
                 <div className="navBarRight">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about">About</a></li>
                 </div>
             </ul>
         </div>

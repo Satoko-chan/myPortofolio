@@ -1,11 +1,10 @@
 import React from 'react';
 import backGround from './asset/img/portofolioFooter.jpg'
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 const StyledFooter = styled.footer`
-  width: 95%;
-  margin: 10px 3% 0 3%;
+  width: 100%;
   text-align: center;
    //&.loaded {
   background-image: url(${backGround});
@@ -14,11 +13,6 @@ const StyledFooter = styled.footer`
   background-position: center;
    //}
   height: 90vh;
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
 `;
 
 

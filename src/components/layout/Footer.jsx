@@ -1,5 +1,4 @@
 import React from 'react';
-import { light } from '@material-ui/core/styles/createPalette';
 
 const year = new Date().getFullYear();
 function Footer() {

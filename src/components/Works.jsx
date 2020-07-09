@@ -13,22 +13,22 @@ const images = [
     {
         url: YamaLog,
         title: "YamaLog",
-        comment: "lerhglzelkrh"
+        comment: "Ruby on Rails"
     },
     {
         url: Peace,
         title: "Peace",
-        comment: "lerhglzelkrh"
+        comment: "Web API"
     },
     {
         url: Blog,
         title: "Blog",
-        comment: "lerhglzelkrh"
+        comment: "EJS, MongoDB"
     },
     {
         url: BookChat,
         title: "BookChat",
-        comment: "lerhglzelkrh"
+        comment: "Web Design, Web Development"
     }
 ];
 
