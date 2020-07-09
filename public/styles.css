@@ -26,8 +26,7 @@
 
   h3 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 4vh;
-    /* color: #717171; */
+    font-size: 3.5vh;
     letter-spacing: 0.05em;
   }
 
@@ -35,7 +34,6 @@
     font-family: 'Abril Fatface', cursive;
     font-size: 2.5vh;
     font-weight: lighter;
-    /* color: #717171; */
     letter-spacing: 0.05em;
   }
 
@@ -109,7 +107,7 @@
 }
 
 #skill h3 {
-  padding-bottom: 5%;
+  padding: 5% 0;
 }
 
 #skill p {
@@ -124,6 +122,21 @@
   position: relative;
 }
 
+.work1 {
+  position: relative;
+}
+.work1:hover::after {
+  position: absolute;
+  z-index: 1;
+  background-color:#e6e04b;
+  opacity: 0.8;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "Yamalog";
+}
+
 /* ================= Contact ================= */
 
 #contact {
@@ -135,7 +148,7 @@
 
 
 .contactText{
-  padding: 30vh 2vh;
+  padding: 15vh 2vh;
   background-color:#fff ;
   position: absolute;
   top: 50%;

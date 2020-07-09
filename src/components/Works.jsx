@@ -1,7 +1,14 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import workImg from "./asset/img/workImg.png"
-import Button from '@material-ui/core/Button';
+// import workImg from "./asset/img/workImg.png"
+// import Button from '@material-ui/core/Button';
+import YamaLog from "./asset/img/YamaLog.jpg"
+import Peace from "./asset/img/Peace.jpg"
+import Blog from "./asset/img/Blog.jpg"
+import BookChat from "./asset/img/BookChat.png"
+
+
+
 
 
 function Works() {
@@ -31,20 +38,14 @@ function Works() {
             </Grid> */}
 
             <Grid container spacing={5}>
-                <Grid item xs={12} md={8}>
-                    <img src={workImg} width="100%" height="400em" alt="workImg" />
+                <Grid item xs={12} md={8} className="work1" >
+                    <img src={YamaLog} width="100%" height="400em" alt="YamaLog" />
                 </Grid>
-                <Grid item xs={12} md={4}>
-                    <img src={workImg} width="100%" height="400em" alt="workImg" />
+                <Grid item xs={12} md={4} >
+                    <img src={Peace} width="100%" height="400em" alt="Peace" className="work2" />
                 </Grid>
-                <Grid item xs={12} md={6}><img src={workImg} width="100%" height="400em" alt="workImg" /></Grid>
-                <Grid item xs={12} md={6}><img src={workImg} width="100%" height="400em" alt="workImg" /></Grid>
-                <Grid item xs={12} md={4}>
-                    <img src={workImg} width="100%" height="400em" alt="workImg" />
-                </Grid>
-                <Grid item xs={12} md={8}>
-                    <img src={workImg} width="100%" height="400em" alt="workImg" />
-                </Grid>
+                <Grid item xs={12} md={6} ><img src={Blog} width="100%" height="400em" alt="Blog" className="work3" /></Grid>
+                <Grid item xs={12} md={6} ><img src={BookChat} width="100%" height="400em" alt="BookChat" className="work4" /></Grid>
             </Grid>
 
 
