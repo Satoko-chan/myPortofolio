@@ -7,6 +7,7 @@ const StyledSatoko = styled(Link)`
     float: left;
     padding: 0 15px;
     line-height: 48px;
+    font-size: 20px;
     list-style: none;
     color: #000;
 `;

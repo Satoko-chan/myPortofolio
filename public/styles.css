@@ -94,14 +94,14 @@
 /* ================= Contact ================= */
 
 #contact {
-  height: 30em;
+  height: 40em;
   background-size:cover;
   position: relative;
   color: #717171;
 }
 
 .contactText{
-  padding: 15vh 2vh;
+  padding: 7vh 2vh;
   background-color:#fff ;
   position: absolute;
   top: 50%;

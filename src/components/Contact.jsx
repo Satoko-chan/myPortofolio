@@ -3,6 +3,10 @@ import backGround from './asset/img/portofolioFooter.jpg'
 import styled from "styled-components";
 import Fade from 'react-reveal/Fade';
 
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
+
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -16,6 +20,12 @@ const StyledFooter = styled.footer`
   height: 90vh;
 `;
 
+const StyledLink = styled.a`
+  text-decoration: none;
+  margin: 5vh 2vh;
+  color: #717171;
+  display: inline-block;
+`;
 
 function Contact() {
     const style = {
@@ -30,8 +40,17 @@ function Contact() {
                 <br />
                 <br />
                 <Fade up>
-                    <h3>satoko.wakasa.2020@gmail.com</h3>
+                    <h3><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></h3>
                 </Fade>
+                <StyledLink href="https://github.com/Satoko-chan">
+                    <GitHubIcon />
+                </StyledLink>
+                <StyledLink href="https://www.linkedin.com/in/satoko-wakasa-a26972167/">
+                    <LinkedInIcon />
+                </StyledLink>
+                <StyledLink href="https://codesandbox.io/u/Satoko-chan">
+                    <DeveloperModeIcon />
+                </StyledLink>
             </div>
         </StyledFooter>
     )
