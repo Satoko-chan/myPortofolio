@@ -39,9 +39,9 @@ function Skill() {
                     <Roll left>
                         <h3 >Frond-end</h3>
                         <p>HTML5</p>
-                        <p>CSS/SCSS</p>
-                        <p>JavaScript, ES6</p>
-                        <p>Bootstrap/Sass</p>
+                        <p>CSS3/SCSS</p>
+                        <p>JavaScript</p>
+                        <p>Bootstrap</p>
                     </Roll>
                 </StyledGrid1>
 
@@ -49,7 +49,7 @@ function Skill() {
                     <Roll up timeout={2000}>
                         <h3>Frameworks</h3>
                         <p>Ruby on Rails</p>
-                        <p>React, Redux</p>
+                        <p>React.js, Redux</p>
                     </Roll>
                 </StyledGrid2>
 
@@ -58,7 +58,8 @@ function Skill() {
                         <h3>Other skills</h3>
                         <p>Github</p>
                         <p>Responsive Design</p>
-                        <p>Problem Solving</p>
+                        <p>Sketch</p>
+                        <p>JQuery</p>
                         <p>Public Relations</p>
                     </Roll>
                 </StyledGrid3>
