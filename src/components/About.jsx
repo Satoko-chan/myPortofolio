@@ -42,12 +42,16 @@ function About() {
         <Grid item xs={12} md={4} className="aboutImg">
           <StyledSatokoImg src={satoko} alt="satokoImg" />
         </Grid>
-        <Grid item xs={12} md={8} className="aboutText">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <br></br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <br></br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <Grid item xs={12} md={8} className="aboutText" style={{ fontSize: "3.5vh", fontWeight: "bold" }}>
+          <p>I’m Satoko, a 29-year-old Japanese Front-end engineer based in Bangkok, Thailand.</p>
+          <br />
+          <p>I enjoy creating the whole visual part of the web, keep improving my newly-learned skills and learning up-to-date technologies!</p>
+          <br />
+          <p>Working as a team member, I always try to be humility, hunger and flexible.</p>
+          <br />
+          <p>I studied Web Development at CICCC, an international community college in Vancouver, Canada.</p>
+          <br />
+          <p>I love to play and listen to classic piano, hiking, watching french movies, and travel all around the world!</p>
           <StyledLink href="https://github.com/Satoko-chan">
             <GitHubIcon />
           </StyledLink>
