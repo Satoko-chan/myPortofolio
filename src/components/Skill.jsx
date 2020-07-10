@@ -33,6 +33,7 @@ function Skill() {
     return (
         <div id="skill">
             <h2>What I do</h2>
+            <br />
             <Grid container spacing={1}>
                 <StyledGrid1 item xs={12} md={4} style={{ padding: "40px" }}>
                     <Roll left>
