@@ -40,7 +40,7 @@ function About() {
       <StyledAboutSatoko><Wave text="Satoko" speed="2" delay="0" ></Wave></StyledAboutSatoko>
       <Grid container spacing={5} >
         <Grid item xs={12} md={4} className="aboutImg">
-          <StyledSatokoImg src={satoko} width="85%" alt="satokoImg" />
+          <StyledSatokoImg src={satoko} alt="satokoImg" />
         </Grid>
         <Grid item xs={12} md={8} className="aboutText">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
