@@ -34,7 +34,7 @@ const StyledArrow = styled.a`
 
 const StyledHeadingText = styled.div`
   color: white;
-  padding: 6vh 1vh;
+  padding: 6vh 2vh;
   /* background-color:rgba(107, 197, 173, 0.8) ; */
   background-color:rgba(137, 201, 184, 0.8) ;
   position: absolute;
@@ -46,6 +46,20 @@ const StyledHeadingText = styled.div`
   @media only screen and (min-width: 1000px) {
     padding: 8vh 4vh;
   }
+`;
+
+const StyledHeadingH1 = styled.h1`
+  font-size: 17vh;
+  @media only screen and (min-width: 1000px) {
+    font-size: 20vh;
+    }
+`;
+
+const StyledHeadingH2 = styled.h2`
+  font-size: 6vh;
+  @media only screen and (min-width: 1000px) {
+    font-size: 8vh;
+    }
 `;
 
 const Animation = keyframes`
@@ -79,10 +93,10 @@ function Heading() {
         <StyledHeader id="heading">
           <Fade in={true} timeout={1500}>
             <StyledHeadingText>
-              <Fade in={true} timeout={2000}><h2>I'm</h2></Fade>
-              <Grow in={true} timeout={3000}><h1> Satoko,</h1></Grow>
+              <Fade in={true} timeout={2000}><StyledHeadingH2>I'm</StyledHeadingH2></Fade>
+              <Grow in={true} timeout={3000}><StyledHeadingH1> Satoko,</StyledHeadingH1></Grow>
               {/* <Grow><StyledSatokoGirl src={satokoGirl} /></Grow> */}
-              <Fade in={true} timeout={5000}><h2>a Front-end Web Developer</h2></Fade>
+              <Fade in={true} timeout={5000}><StyledHeadingH2>a Front-end Web Developer</StyledHeadingH2></Fade>
             </StyledHeadingText>
           </Fade>
           <Link smooth={true} to="/#about">
