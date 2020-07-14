@@ -45,19 +45,6 @@
   #heading {
     position: relative;
   }
-  
-  .headingText{
-    color: white;
-    padding: 8vh 4vh;
-    /* background-color:rgba(107, 197, 173, 0.8) ; */
-    background-color:rgba(137, 201, 184, 0.8) ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
 
 /* ================= About ================= */
 
@@ -99,17 +86,6 @@
   background-size:cover;
   position: relative;
   color: #717171;
-}
-
-.contactText{
-  padding: 7vh 2vh;
-  background-color:#fff ;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 
 /* ================= Footer ================= */

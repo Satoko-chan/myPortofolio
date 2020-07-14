@@ -20,6 +20,20 @@ const StyledFooter = styled.footer`
   height: 90vh;
 `;
 
+const StyledContactText = styled.div`
+  padding: 6vh 0.5vh;
+  background-color:#fff ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  @media only screen and (min-width: 1000px) {
+    padding: 7vh 4vh;
+  }
+`;
+
 const StyledLink = styled.a`
   text-decoration: none;
   margin: 5vh 2vh;
@@ -27,20 +41,27 @@ const StyledLink = styled.a`
   display: inline-block;
 `;
 
+// const StyledEmail = styled.a`
+//   text-decoration: none;
+//   margin: 5vh 2vh;
+//   color: #717171;
+//   display: inline-block;
+// `;
+
 function Contact() {
     const style = {
         backgroundImage: `url(${backGround})`
     }
     return (
         <StyledFooter style={style} id="contact" name="contact">
-            <div className="contactText">
+            <StyledContactText>
                 <h2 >Contact</h2>
                 <p>Interested in working with me?</p>
                 <p>Drop me a line:</p>
                 <br />
                 <br />
                 <Fade up>
-                    <h3><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></h3>
+                    <h3 style={{ fontSize: "3vh" }}><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></h3>
                 </Fade>
                 <StyledLink href="https://github.com/Satoko-chan">
                     <GitHubIcon />
@@ -51,7 +72,7 @@ function Contact() {
                 <StyledLink href="https://codesandbox.io/u/Satoko-chan">
                     <DeveloperModeIcon />
                 </StyledLink>
-            </div>
+            </StyledContactText>
         </StyledFooter>
     )
 }

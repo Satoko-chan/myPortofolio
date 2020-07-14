@@ -31,6 +31,22 @@ const StyledArrow = styled.a`
   -webkit-transform: rotate(45deg);
 `;
 
+const StyledHeadingText = styled.div`
+  color: white;
+  padding: 6vh 1vh;
+  /* background-color:rgba(107, 197, 173, 0.8) ; */
+  background-color:rgba(137, 201, 184, 0.8) ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  @media only screen and (min-width: 1000px) {
+    padding: 8vh 4vh;
+  }
+`;
+
 const Animation = keyframes`
   0% { 
       opacity: 0;
@@ -60,12 +76,12 @@ function Heading() {
     <Router>
       <StyledHeader id="heading">
         <Fade in={true} timeout={1500}>
-          <div className="headingText">
+          <StyledHeadingText>
             <Fade in={true} timeout={2000}><h2>I'm</h2></Fade>
             <Grow in={true} timeout={3000}><h1> Satoko,</h1></Grow>
             {/* <Grow><StyledSatokoGirl src={satokoGirl} /></Grow> */}
             <Fade in={true} timeout={5000}><h2>a Front-end Web Developer</h2></Fade>
-          </div>
+          </StyledHeadingText>
         </Fade>
         <Link smooth={true} to="/#about">
           <StyledArrowAnimation >
