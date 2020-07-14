@@ -34,6 +34,13 @@ const StyledContactText = styled.div`
   }
 `;
 
+const StyledEmailFont = styled.h3`
+  font-size: 2.6vh;
+  @media only screen and (min-width: 1000px) {
+    font-size: 3.2vh;
+  }
+`;
+
 const StyledLink = styled.a`
   text-decoration: none;
   margin: 5vh 2vh;
@@ -41,12 +48,6 @@ const StyledLink = styled.a`
   display: inline-block;
 `;
 
-// const StyledEmail = styled.a`
-//   text-decoration: none;
-//   margin: 5vh 2vh;
-//   color: #717171;
-//   display: inline-block;
-// `;
 
 function Contact() {
     const style = {
@@ -61,7 +62,7 @@ function Contact() {
                 <br />
                 <br />
                 <Fade up>
-                    <h3 style={{ fontSize: "3vh" }}><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></h3>
+                    <StyledEmailFont><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></StyledEmailFont>
                 </Fade>
                 <StyledLink href="https://github.com/Satoko-chan">
                     <GitHubIcon />
