@@ -75,21 +75,23 @@ const StyledArrowAnimation = styled.div`
 function Heading() {
   return (
     <Router>
-      <StyledHeader id="heading">
-        <Fade in={true} timeout={1500}>
-          <StyledHeadingText>
-            <Fade in={true} timeout={2000}><h2>I'm</h2></Fade>
-            <Grow in={true} timeout={3000}><h1> Satoko,</h1></Grow>
-            {/* <Grow><StyledSatokoGirl src={satokoGirl} /></Grow> */}
-            <Fade in={true} timeout={5000}><h2>a Front-end Web Developer</h2></Fade>
-          </StyledHeadingText>
-        </Fade>
-        <Link smooth={true} to="/#about">
-          <StyledArrowAnimation >
-            <StyledArrow href="#about"></StyledArrow>
-          </StyledArrowAnimation>
-        </Link>
-      </StyledHeader>
+      <Fade in={true} timeout={500}>
+        <StyledHeader id="heading">
+          <Fade in={true} timeout={1500}>
+            <StyledHeadingText>
+              <Fade in={true} timeout={2000}><h2>I'm</h2></Fade>
+              <Grow in={true} timeout={3000}><h1> Satoko,</h1></Grow>
+              {/* <Grow><StyledSatokoGirl src={satokoGirl} /></Grow> */}
+              <Fade in={true} timeout={5000}><h2>a Front-end Web Developer</h2></Fade>
+            </StyledHeadingText>
+          </Fade>
+          <Link smooth={true} to="/#about">
+            <StyledArrowAnimation >
+              <StyledArrow href="#about"></StyledArrow>
+            </StyledArrowAnimation>
+          </Link>
+        </StyledHeader>
+      </Fade>
     </Router>
   )
 }
