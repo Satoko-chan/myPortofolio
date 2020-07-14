@@ -86,6 +86,25 @@ const StyledArrowAnimation = styled.div`
 //   opacity: 1;
 // `;
 
+// function onReady(callback) {
+//   var intervalId = window.setInterval(function () {
+//     if (document.getElementsByTagName('App')[0] !== undefined) {
+//       window.clearInterval(intervalId);
+//       callback.call(this);
+//     }
+//   }, 1000);
+// }
+
+// function setVisible(selector, visible) {
+//   document.getElementsByTagName('App').style.display = visible ? 'block' : 'none';
+// }
+
+// onReady(function () {
+//   setVisible('.page', true);
+//   setVisible('#loading', false);
+// })
+
+
 function Heading() {
   return (
     <Router>
@@ -106,6 +125,7 @@ function Heading() {
           </Link>
         </StyledHeader>
       </Fade>
+      <div id="loading"></div>
     </Router>
   )
 }

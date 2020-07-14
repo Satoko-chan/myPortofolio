@@ -30,11 +30,17 @@ const StyledNavbar = styled.div`
     padding: 0;
 `;
 
+const scrollWithOffset = (e) => {
+    const yCoordinate = e.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+};
+
 function Navbar() {
     return (
         <Router>
             <StyledNavbar style={{ background: "rgba(255,255,255,0.9)" }}>
-                <StyledSatoko smooth={true} to="/#heading">Satoko</StyledSatoko>
+                <StyledSatoko to="/#heading" smooth scroll={(e) => scrollWithOffset(e)}>Satoko</StyledSatoko>
                 <StyledLink smooth={true} to="/#contact">Contact</StyledLink>
                 <StyledLink smooth={true} to="/#works">Works</StyledLink>
                 <StyledLink smooth={true} to="/#about">About</StyledLink>

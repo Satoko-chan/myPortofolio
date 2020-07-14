@@ -37,7 +37,7 @@ function About() {
   return (
     <div id="about">
       <h2>About</h2>
-      <StyledAboutSatoko><Wave text="Satoko" speed="2" delay="0" ></Wave></StyledAboutSatoko>
+      <StyledAboutSatoko><Wave text="Satoko" effect="jump" speed="2" delay="0" ></Wave></StyledAboutSatoko>
       <Grid container spacing={5} >
         <Grid item xs={12} md={4} className="aboutImg">
           <StyledSatokoImg src={satoko} alt="satokoImg" />
