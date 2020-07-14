@@ -22,13 +22,14 @@ const StyledArrow = styled.a`
   border: solid #fff;
   display: block;
   position: absolute;
-  left: 50%; 
+  left: 48%; 
   margin-top: 78vh;
   width: 35px;
   height: 35px;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg) translate(0, 0);
   -webkit-transform: rotate(45deg);
+  ${'' /* -ms-transform: translate(-50%); */}
 `;
 
 const StyledHeadingText = styled.div`
