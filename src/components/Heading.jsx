@@ -50,8 +50,10 @@ const StyledHeadingText = styled.div`
 
 const StyledHeadingH1 = styled.h1`
   font-size: 17vh;
+  line-height: 17vh;
   @media only screen and (min-width: 1000px) {
     font-size: 20vh;
+    line-height: 20vh;
     }
 `;
 
@@ -108,7 +110,7 @@ const StyledArrowAnimation = styled.div`
 function Heading() {
   return (
     <Router>
-      <Fade in={true} timeout={500}>
+      <Fade in={true} timeout={1000}>
         <StyledHeader id="heading">
           <Fade in={true} timeout={1500}>
             <StyledHeadingText>
