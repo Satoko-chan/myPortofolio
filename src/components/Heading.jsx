@@ -1,5 +1,5 @@
 import React from 'react';
-import backGround from './asset/img/portofolioLanding.jpg'
+import backGround from './asset/img/portofolioBg.jpeg'
 import styled, { keyframes } from "styled-components";
 import Fade from '@material-ui/core/Fade';
 import Grow from '@material-ui/core/Grow';

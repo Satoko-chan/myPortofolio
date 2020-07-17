@@ -1,5 +1,5 @@
 import React from 'react';
-import backGround from './asset/img/portofolioFooter.jpg'
+import backGround from './asset/img/footerBg.jpg'
 import styled from "styled-components";
 import Fade from 'react-reveal/Fade';
 
@@ -50,32 +50,32 @@ const StyledLink = styled.a`
 
 
 function Contact() {
-    const style = {
-        backgroundImage: `url(${backGround})`
-    }
-    return (
-        <StyledFooter style={style} id="contact" name="contact">
-            <StyledContactText>
-                <h2 >Contact</h2>
-                <p>Interested in working with me?</p>
-                <p>Drop me a line:</p>
-                <br />
-                <br />
-                <Fade up>
-                    <StyledEmailFont><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></StyledEmailFont>
-                </Fade>
-                <StyledLink href="https://github.com/Satoko-chan">
-                    <GitHubIcon />
-                </StyledLink>
-                <StyledLink href="https://www.linkedin.com/in/satoko-wakasa-a26972167/">
-                    <LinkedInIcon />
-                </StyledLink>
-                <StyledLink href="https://codesandbox.io/u/Satoko-chan">
-                    <DeveloperModeIcon />
-                </StyledLink>
-            </StyledContactText>
-        </StyledFooter>
-    )
+  const style = {
+    backgroundImage: `url(${backGround})`
+  }
+  return (
+    <StyledFooter style={style} id="contact" name="contact">
+      <StyledContactText>
+        <h2 >Contact</h2>
+        <p>Interested in working with me?</p>
+        <p>Drop me a line:</p>
+        <br />
+        <br />
+        <Fade up>
+          <StyledEmailFont><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></StyledEmailFont>
+        </Fade>
+        <StyledLink href="https://github.com/Satoko-chan">
+          <GitHubIcon />
+        </StyledLink>
+        <StyledLink href="https://www.linkedin.com/in/satoko-wakasa-a26972167/">
+          <LinkedInIcon />
+        </StyledLink>
+        <StyledLink href="https://codesandbox.io/u/Satoko-chan">
+          <DeveloperModeIcon />
+        </StyledLink>
+      </StyledContactText>
+    </StyledFooter>
+  )
 }
 
 export default Contact;
