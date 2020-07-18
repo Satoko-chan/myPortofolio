@@ -4,10 +4,10 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
 import Fade from 'react-reveal/Fade';
 
-import YamaLog from "./asset/img/YamaLog.jpg"
-import Peace from "./asset/img/Peace.jpg"
-import Blog from "./asset/img/Blog.jpg"
-import BookChat from "./asset/img/BookChat.png"
+import YamaLog from "./asset/img/works1.jpg"
+import Peace from "./asset/img/works2.jpg"
+import Blog from "./asset/img/works3.jpg"
+import BookChat from "./asset/img/works4.png"
 
 
 const images = [
