@@ -1,7 +1,8 @@
 import React from 'react';
 import satoko from "./asset/img/satokoPhoto.JPG"
 import Grid from '@material-ui/core/Grid';
-import { Wave } from 'react-animated-text';
+// import { Wave } from 'react-animated-text';
+import Rotate from 'react-reveal/Rotate';
 import styled from "styled-components";
 
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -37,7 +38,8 @@ function About() {
   return (
     <div id="about">
       <h2>About</h2>
-      <StyledAboutSatoko><Wave text="Satoko" effect="jump" speed="2" delay="0" ></Wave></StyledAboutSatoko>
+      {/* <StyledAboutSatoko><Wave text="Satoko" effect="jump" speed="2" delay="0" ></Wave></StyledAboutSatoko> */}
+      <StyledAboutSatoko><Rotate bottom left>Satoko</Rotate></StyledAboutSatoko>
       <Grid container spacing={5} >
         <Grid item xs={12} md={4} className="aboutImg">
           <StyledSatokoImg src={satoko} alt="satokoImg" />
