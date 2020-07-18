@@ -1,5 +1,5 @@
 import React from 'react';
-import satoko from "./asset/img/profilePhoto.JPG"
+import satoko from "./asset/img/satokoPhoto.JPG"
 import Grid from '@material-ui/core/Grid';
 import { Wave } from 'react-animated-text';
 import styled from "styled-components";
