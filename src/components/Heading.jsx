@@ -43,7 +43,7 @@ const StyledHeadingText = styled.div`
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1140px) {
     padding: 8vh 4vh;
   }
 `;
@@ -51,7 +51,7 @@ const StyledHeadingText = styled.div`
 const StyledHeadingH1 = styled.h1`
   font-size: 17vh;
   line-height: 17vh;
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1140px) {
     font-size: 20vh;
     line-height: 20vh;
     }
@@ -59,7 +59,7 @@ const StyledHeadingH1 = styled.h1`
 
 const StyledHeadingH2 = styled.h2`
   font-size: 6vh;
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1140px) {
     font-size: 8vh;
     }
 `;

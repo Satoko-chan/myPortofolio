@@ -13,7 +13,7 @@ import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 const StyledAboutSatoko = styled.h3`
     font-size: 11vh;
     padding-bottom: 0.5em;
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1140px) {
     font-size: 20vh;
     letter-spacing: 1vh;
   }
@@ -21,7 +21,7 @@ const StyledAboutSatoko = styled.h3`
 
 const StyledSatokoImg = styled.img`
     width: 70%;
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1140px) {
     width: 85%;
   }
 `;
