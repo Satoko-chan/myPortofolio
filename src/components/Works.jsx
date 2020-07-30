@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
 import Fade from 'react-reveal/Fade';
+import { Link } from "react-router-dom";
 
 import YamaLog from "./asset/img/works1.jpg"
 import Peace from "./asset/img/works2.jpg"
@@ -14,22 +15,26 @@ const images = [
     {
         url: YamaLog,
         title: "YamaLog",
-        comment: "Ruby on Rails"
+        comment: "Ruby on Rails",
+        link: "/yamalog"
     },
     {
         url: Peace,
         title: "Peace",
-        comment: "Web API"
+        comment: "Web API",
+        link: "/api"
     },
     {
         url: Blog,
         title: "Blog",
-        comment: "EJS, MongoDB"
+        comment: "EJS, MongoDB",
+        link: "/blog"
     },
     {
         url: BookChat,
         title: "BookChat",
-        comment: "Web Design, Web Development"
+        comment: "Web Design, Web Development",
+        link: "/portofolio"
     }
 ];
 
@@ -139,30 +144,32 @@ function Works() {
                             className={classes.image}
                             focusVisibleClassName={classes.focusVisible}
                         >
-                            <span
-                                className={classes.imageSrc}
-                                style={{
-                                    backgroundImage: `url(${image.url})`
-                                }}
-                            />
-                            <span className={classes.imageBackdrop} />
-                            <span className={classes.imageButton}>
-                                <Typography
-                                    component="span"
-                                    variant="subtitle1"
-                                    color="inherit"
-                                    className={classes.imageTitle}
-                                >
-                                    <h3>{image.title}</h3>
-                                    {image.comment}
-                                    <span className={classes.imageMarked} />
-                                </Typography>
-                            </span>
+                            <Link to={`${image.link}`} >
+                                <span
+                                    className={classes.imageSrc}
+                                    style={{
+                                        backgroundImage: `url(${image.url})`
+                                    }}
+                                />
+                                <span className={classes.imageBackdrop} />
+                                <span className={classes.imageButton}>
+                                    <Typography
+                                        component="span"
+                                        variant="subtitle1"
+                                        color="inherit"
+                                        className={classes.imageTitle}
+                                    >
+                                        <h3>{image.title}</h3>
+                                        {image.comment}
+                                        <span className={classes.imageMarked} />
+                                    </Typography>
+                                </span>
+                            </Link>
                         </ButtonBase>
                     ))}
                 </div>
             </Fade>
-        </div>
+        </div >
     )
 }
 

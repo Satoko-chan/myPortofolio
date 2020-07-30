@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Heading from "./Heading"
 import About from "./About"
 import Skill from "./Skill"
@@ -16,19 +16,21 @@ function App() {
     return (
         <div>
             <BrowserRouter>
-                <Route exact path="/">
-                    <Navbar />
-                    <Heading />
-                    <About />
-                    <Works />
-                    <Skill />
-                    <Contact />
-                    <Footer />
-                </Route>
-                <Route path="/portofolio" component={Portofolio} />
-                <Route path="/yamalog" component={Yamalog} />
-                <Route path="/api" component={Api} />
-                <Route path="/blog" component={Blog} />
+                <Navbar />
+                <Switch>
+                    <Route exact path="/">
+                        <Heading />
+                        <About />
+                        <Works />
+                        <Skill />
+                        <Contact />
+                    </Route>
+                    <Route path="/portofolio" component={Portofolio} />
+                    <Route path="/yamalog" component={Yamalog} />
+                    <Route path="/api" component={Api} />
+                    <Route path="/blog" component={Blog} />
+                </Switch>
+                <Footer />
             </BrowserRouter>
         </div>
     )

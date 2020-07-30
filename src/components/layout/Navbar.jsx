@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import styled from "styled-components";
 import smoothscroll from 'smoothscroll-polyfill';
@@ -40,15 +40,15 @@ const StyledNavbar = styled.div`
 function Navbar() {
     smoothscroll.polyfill();
     return (
-        <Router>
-            <StyledNavbar style={{ background: "rgba(255,255,255,0.9)" }}>
-                {/* <StyledSatoko to="/#heading" smooth scroll={(e) => scrollWithOffset(e)}>Satoko</StyledSatoko> */}
-                <StyledSatoko smooth={true} to="/#heading" >Satoko</StyledSatoko>
-                <StyledLink smooth={true} to="/#contact">Contact</StyledLink>
-                <StyledLink smooth={true} to="/#works">Works</StyledLink>
-                <StyledLink smooth={true} to="/#about">About</StyledLink>
-            </StyledNavbar>
-        </Router>
+        // <Router>
+        <StyledNavbar style={{ background: "rgba(255,255,255,0.9)" }}>
+            {/* <StyledSatoko to="/#heading" smooth scroll={(e) => scrollWithOffset(e)}>Satoko</StyledSatoko> */}
+            <StyledSatoko smooth={true} to="/#heading" >Satoko</StyledSatoko>
+            <StyledLink smooth={true} to="/#contact">Contact</StyledLink>
+            <StyledLink smooth={true} to="/#works">Works</StyledLink>
+            <StyledLink smooth={true} to="/#about">About</StyledLink>
+        </StyledNavbar>
+        // </Router>
     )
 }
 
