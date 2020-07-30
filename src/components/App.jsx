@@ -11,25 +11,28 @@ import Portofolio from "./subpage/Portofolio"
 import Yamalog from "./subpage/Yamalog"
 import Api from "./subpage/Api"
 import Blog from "./subpage/Blog"
+import ScrollToTop from "./asset/ScrollToTop"
 
 function App() {
     return (
         <div>
             <BrowserRouter>
                 <Navbar />
-                <Switch>
-                    <Route exact path="/">
-                        <Heading />
-                        <About />
-                        <Works />
-                        <Skill />
-                        <Contact />
-                    </Route>
-                    <Route path="/portofolio" component={Portofolio} />
-                    <Route path="/yamalog" component={Yamalog} />
-                    <Route path="/api" component={Api} />
-                    <Route path="/blog" component={Blog} />
-                </Switch>
+                <ScrollToTop>
+                    <Switch>
+                        <Route exact path="/">
+                            <Heading />
+                            <About />
+                            <Works />
+                            <Skill />
+                            <Contact />
+                        </Route>
+                        <Route path="/portofolio" component={Portofolio} />
+                        <Route path="/yamalog" component={Yamalog} />
+                        <Route path="/api" component={Api} />
+                        <Route path="/blog" component={Blog} />
+                    </Switch>
+                </ScrollToTop>
                 <Footer />
             </BrowserRouter>
         </div>
