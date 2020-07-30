@@ -15,25 +15,25 @@ const images = [
     {
         url: YamaLog,
         title: "YamaLog",
-        comment: "Ruby on Rails",
+        comment: "Ruby on Rails, Javascript, Sass, Bootstrap",
         link: "/yamalog"
     },
     {
         url: Peace,
-        title: "Peace",
-        comment: "Web API",
-        link: "/api"
+        title: "Web API app",
+        comment: "comming soon...",
+        link: ""
     },
     {
         url: Blog,
         title: "Blog",
-        comment: "EJS, MongoDB",
+        comment: "EJS, MongoDB, Bootstrap",
         link: "/blog"
     },
     {
         url: BookChat,
-        title: "BookChat",
-        comment: "Web Design, Web Development",
+        title: "My portofolio",
+        comment: "React.js, Material-UI",
         link: "/portofolio"
     }
 ];
@@ -159,8 +159,9 @@ function Works() {
                                         color="inherit"
                                         className={classes.imageTitle}
                                     >
-                                        <h3>{image.title}</h3>
-                                        {image.comment}
+                                        <h3 style={{ letterSpacing: "0.5vh" }}>{image.title}</h3>
+                                        <p>using :</p>
+                                        <p style={{ fontWeight: "border" }}>{image.comment}</p>
                                         <span className={classes.imageMarked} />
                                     </Typography>
                                 </span>
