@@ -26,10 +26,12 @@ const StyledSubTitle = styled.h2`
 
 const StyledP = styled.p`
     color: #717171;
+    width: 80%;
+    margin: 0 auto;
 `;
 
 const StyledDisplay = styled.img`
-    width: 100%;
+    width: 95%;
   @media only screen and (min-width: 965px) {
     width: 80%;
   }
@@ -48,7 +50,7 @@ const StyledLang = styled.p`
 function Portofolio() {
     return (
         <div id="subWork">
-            <StyledWorkTitle>My portofolio</StyledWorkTitle>
+            <StyledWorkTitle>Portofolio</StyledWorkTitle>
             <StyledP>My very first portofolio using React.js</StyledP>
             <br />
             <br />
@@ -71,10 +73,10 @@ function Portofolio() {
             <StyledP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</StyledP>
             <br />
             <br />
-            <br />
-            <br />
             <StyledButton href="https://github.com/Satoko-chan/myPortofolio">visit GitHub</StyledButton>
             <StyledButton href="https://im-satoko-wakasa.netlify.app/">visit Website</StyledButton>
+            <br />
+            <br />
         </div>
     )
 }
