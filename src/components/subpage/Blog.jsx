@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Portofolio() {
+function Blog() {
     return (
         <div>
             <h1>hello</h1>
@@ -8,4 +8,4 @@ function Portofolio() {
     )
 }
 
-export default Portofolio;
+export default Blog;
