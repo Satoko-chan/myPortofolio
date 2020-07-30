@@ -169,7 +169,7 @@ function Works() {
                     ))}
                 </div>
             </Fade>
-        </div >
+        </div>
     )
 }
 
