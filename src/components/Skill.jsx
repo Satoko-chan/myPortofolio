@@ -35,7 +35,7 @@ function Skill() {
             <h2>What I do</h2>
             <br />
             <Grid container spacing={1}>
-                <StyledGrid1 item xs={12} sm={4} style={{ padding: "40px" }}>
+                <StyledGrid1 item xs={12} md={4} style={{ padding: "38px" }}>
                     <Roll left>
                         <h3 >Frond-end</h3>
                         <p>HTML5</p>
@@ -46,7 +46,7 @@ function Skill() {
                     </Roll>
                 </StyledGrid1>
 
-                <StyledGrid2 item xs={12} sm={4} style={{ padding: "50px" }}>
+                <StyledGrid2 item xs={12} md={4} style={{ padding: "50px" }}>
                     <Roll up timeout={2000}>
                         <h3>Frameworks</h3>
                         <p>Ruby on Rails</p>
@@ -55,7 +55,7 @@ function Skill() {
                     </Roll>
                 </StyledGrid2>
 
-                <StyledGrid3 item xs={12} sm={4} style={{ padding: "38px 0" }}>
+                <StyledGrid3 item xs={12} md={4} style={{ padding: "38px 0" }}>
                     <Roll right timeout={3000}>
                         <h3>Other skills</h3>
                         <p>Github</p>

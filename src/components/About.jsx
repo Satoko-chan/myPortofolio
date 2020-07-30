@@ -15,7 +15,7 @@ const StyledAboutSatoko = styled.h3`
     padding-bottom: 0.5em;
   @media only screen and (min-width: 768px) {
     font-size: 20vh;
-    letter-spacing: 2.5vh;
+    letter-spacing: 1.5vh;
   }
 `;
 
