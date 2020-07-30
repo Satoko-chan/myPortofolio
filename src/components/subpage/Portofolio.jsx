@@ -2,6 +2,7 @@ import React from 'react';
 import display from "../asset/img/portofolioDisplay.png";
 import styled, { keyframes } from "styled-components";
 import StyledButton from "../asset/button";
+import Fade from 'react-reveal/Fade';
 
 const StyledWorkTitle = styled.h3`
     color: #717171;
@@ -54,7 +55,7 @@ function Portofolio() {
             <StyledP>My very first portofolio using React.js</StyledP>
             <br />
             <br />
-            <StyledDisplay src={display} alt="portofolioDisplay" />
+            <Fade timeout={2000}><StyledDisplay src={display} alt="portofolioDisplay" /></Fade>
             <br />
             <br />
             <br />
