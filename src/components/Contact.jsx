@@ -57,6 +57,7 @@ function Contact() {
     <StyledFooter style={style} id="contact" name="contact">
       <StyledContactText>
         <h2 >Contact</h2>
+        <br />
         <p>Interested in working with me?</p>
         <p>Drop me a line:</p>
         <br />

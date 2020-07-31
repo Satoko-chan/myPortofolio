@@ -39,7 +39,7 @@ function About() {
     <div id="about">
       <h2>About</h2>
       {/* <StyledAboutSatoko><Wave text="Satoko" effect="jump" speed="2" delay="0" ></Wave></StyledAboutSatoko> */}
-      <StyledAboutSatoko><Rotate bottom left>Satoko</Rotate></StyledAboutSatoko>
+      <StyledAboutSatoko><Rotate bottom left timeout={1000}>Satoko</Rotate></StyledAboutSatoko>
       <Grid container spacing={5} >
         <Grid item xs={12} md={4} className="aboutImg">
           <StyledSatokoImg src={satoko} alt="satokoImg" />

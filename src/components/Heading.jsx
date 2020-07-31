@@ -34,8 +34,7 @@ const StyledArrow = styled.a`
 
 const StyledHeadingText = styled.div`
   color: white;
-  padding: 6vh 2vh;
-  /* background-color:rgba(107, 197, 173, 0.8) ; */
+  padding: 8vh 4vh;
   background-color:rgba(137, 201, 184, 0.8) ;
   position: absolute;
   top: 50%;
@@ -49,11 +48,10 @@ const StyledHeadingText = styled.div`
 `;
 
 const StyledHeadingH1 = styled.h1`
-  font-size: 17vh;
-  line-height: 17vh;
+  font-size: 15vh;
+  line-height: 15vh;
   @media only screen and (min-width: 1140px) {
-    font-size: 20vh;
-    line-height: 20vh;
+    font-size: 18vh;
     }
 `;
 
@@ -115,7 +113,7 @@ function Heading() {
           <Fade in={true} timeout={1500}>
             <StyledHeadingText>
               <Fade in={true} timeout={2000}><StyledHeadingH2>I'm</StyledHeadingH2></Fade>
-              <Grow in={true} timeout={3000}><StyledHeadingH1> Satoko,</StyledHeadingH1></Grow>
+              <Grow in={true} timeout={3000}><StyledHeadingH1>Satoko.</StyledHeadingH1></Grow>
               {/* <Grow><StyledSatokoGirl src={satokoGirl} /></Grow> */}
               <Fade in={true} timeout={5000}><StyledHeadingH2>a Front-end Web Developer</StyledHeadingH2></Fade>
             </StyledHeadingText>

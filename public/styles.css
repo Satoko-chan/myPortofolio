@@ -14,18 +14,18 @@
 
   h1 {
     font-family: 'Sacramento', cursive;
-    font-size: 20vh;
     font-weight: lighter;
   }
 
   h2 {
     font-family: 'Sacramento', cursive;
-    font-size: 8vh;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-size: 6vh;
     font-weight: lighter;
   }
 
   h3 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Verdana', sans-serif;
     font-size: 3.5vh;
     letter-spacing: 0.05em;
   }
@@ -90,7 +90,7 @@
 #works {
   background-color: #f3f0f1;
   padding: 12% 0;
-  position: relative;
+  /* position: relative; */
 }
 
 /* ================= Contact ================= */
@@ -101,10 +101,4 @@
   position: relative;
   color: #717171;
 }
-
-/* ================= /worksPage ================= */
-
-/* #subWork {
-  padding: 5% 5%;
-} */
 

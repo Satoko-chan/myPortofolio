@@ -5,6 +5,7 @@ import styled from "styled-components";
 import smoothscroll from 'smoothscroll-polyfill';
 
 const StyledSatoko = styled(Link)`
+    font-family: 'Megrim', cursive;
     float: left;
     padding: 0 15px;
     line-height: 48px;
@@ -14,6 +15,7 @@ const StyledSatoko = styled(Link)`
 `;
 
 const StyledLink = styled(Link)`
+    font-family: 'Megrim', cursive;
     float: right;
     padding: 0 15px;
     line-height: 48px;
@@ -22,7 +24,6 @@ const StyledLink = styled(Link)`
 `;
 
 const StyledNavbar = styled.div`
-    font-family: 'Megrim', cursive;
     height: 48px;
     position: sticky;
     top: 0;
