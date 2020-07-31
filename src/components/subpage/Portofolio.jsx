@@ -1,8 +1,9 @@
 import React from 'react';
 import display from "../asset/img/portofolioDisplay.png";
 import styled, { keyframes } from "styled-components";
-import StyledButton from "../asset/button";
+import { StyledButton } from "../asset/button";
 import Fade from 'react-reveal/Fade';
+import { WorksContent } from "./WorksContent";
 
 const StyledWorkTitle = styled.h3`
     color: #717171;
@@ -29,6 +30,7 @@ const StyledP = styled.p`
     color: #717171;
     width: 60%;
     margin: 0 auto;
+    padding-bottom: 5%;
 `;
 
 const StyledDisplay = styled.img`
@@ -48,37 +50,37 @@ const StyledLang = styled.p`
   display: inline-block;
 `;
 
-function Portofolio() {
-  return (
-    <div id="subWork">
-      <StyledWorkTitle>Portofolio</StyledWorkTitle>
-      <StyledP>My very first portofolio using React.js</StyledP>
-      <br />
-      <br />
-      <Fade timeout={4000}><StyledDisplay src={display} alt="portofolioDisplay" /></Fade>
-      <br />
-      <br />
-      <br />
-      <br />
-      <StyledSubTitle>Built with</StyledSubTitle>
-      <StyledLang>React.js</StyledLang>
-      <StyledLang>Material-UI</StyledLang>
-      <StyledLang>HTML5</StyledLang>
-      <StyledLang>CSS3</StyledLang>
-      <br />
-      <br />
-      <br />
-      <br />
-      <StyledSubTitle>Overview</StyledSubTitle>
-      <StyledP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</StyledP>
-      <br />
-      <br />
-      <StyledButton href="https://github.com/Satoko-chan/myPortofolio">visit GitHub</StyledButton>
-      <StyledButton href="https://im-satoko-wakasa.netlify.app/">visit Website</StyledButton>
-      <br />
-      <br />
-    </div>
-  )
+const StyledContainer = styled.div`
+  padding: 8% 0;
+`;
+
+class Portofolio extends React.Component {
+  onBtnClick = (e) => {
+    e.preventDefault();
+    this.props.history.goBack();
+  };
+  render() {
+    return (
+      <div id="subWork" >
+        <StyledWorkTitle>{WorksContent.work4.title}</StyledWorkTitle>
+        <StyledP>{WorksContent.work4.titleText}</StyledP>
+        <Fade timeout={4000}><StyledDisplay src={display} alt="workDisplay" /></Fade>
+        <StyledButton href={WorksContent.work4.githubHref}>visit GitHub</StyledButton>
+        <StyledButton href={WorksContent.work4.websiteHref}>visit Website</StyledButton>
+        <StyledContainer>
+          <StyledSubTitle>Built with</StyledSubTitle>
+          {WorksContent.work4.language.map((item, index) => (
+            <StyledLang variant="overline" key={index}>
+              {item}
+            </StyledLang>
+          ))}
+        </StyledContainer>
+        <StyledSubTitle>Overview</StyledSubTitle>
+        <StyledP>{WorksContent.work4.overview}</StyledP>
+        <StyledButton className="back" onClick={this.onBtnClick}>BACK</StyledButton>
+      </div>
+    )
+  }
 }
 
 export default Portofolio;
