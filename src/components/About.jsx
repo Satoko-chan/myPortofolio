@@ -11,7 +11,7 @@ import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 
 
 const StyledAboutSatoko = styled.h3`
-    font-size: 11.5vh;
+    font-size: 10vh;
     padding-bottom: 0.5em;
   @media only screen and (min-width: 965px) {
     font-size: 20vh;

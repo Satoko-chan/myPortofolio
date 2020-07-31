@@ -35,7 +35,7 @@ const StyledContactText = styled.div`
 `;
 
 const StyledEmailFont = styled.h3`
-  font-size: 2.6vh;
+  font-size: 2.5vh;
   @media only screen and (min-width: 1140px) {
     font-size: 3.2vh;
   }
