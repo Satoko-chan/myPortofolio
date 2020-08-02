@@ -1,5 +1,5 @@
 import React from 'react';
-import display from "../asset/img/portofolioDisplay.png";
+import display from "../asset/img/display.png";
 import styled, { keyframes } from "styled-components";
 import { StyledButton } from "../asset/button";
 import Fade from 'react-reveal/Fade';
@@ -28,9 +28,13 @@ const StyledSubTitle = styled.h2`
 
 const StyledP = styled.p`
     color: #717171;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 5%;
+    line-height: 2;
+    @media only screen and (min-width: 965px) {
+      width: 60%;
+  }
 `;
 
 const StyledDisplay = styled.img`
