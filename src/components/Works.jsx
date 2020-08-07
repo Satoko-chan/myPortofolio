@@ -16,25 +16,29 @@ const images = [
         url: YamaLog,
         title: "YamaLog",
         comment: "Ruby on Rails, Javascript, Sass, Bootstrap",
-        link: "/yamalog"
-    },
-    {
-        url: Peace,
-        title: "Web API app",
-        comment: "comming soon...",
-        link: ""
+        link: "/yamalog",
+        target: ""
     },
     {
         url: Blog,
         title: "Blog",
         comment: "EJS, MongoDB, Bootstrap",
-        link: "/blog"
+        link: "/blog",
+        target: "_blank"
     },
     {
         url: BookChat,
         title: "My portofolio",
         comment: "React.js, Material-UI",
-        link: "/portofolio"
+        link: "/portofolio",
+        target: ""
+    },
+    {
+        url: Peace,
+        title: "Web API app",
+        comment: "comming soon...",
+        link: "",
+        target: ""
     }
 ];
 
@@ -144,7 +148,7 @@ function Works() {
                             className={classes.image}
                             focusVisibleClassName={classes.focusVisible}
                         >
-                            <Link to={`${image.link}`} >
+                            <Link to={`${image.link}`} target={`${image.target}`}>
                                 <span
                                     className={classes.imageSrc}
                                     style={{

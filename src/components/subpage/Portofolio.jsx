@@ -69,7 +69,7 @@ class Portofolio extends React.Component {
         <StyledWorkTitle>{WorksContent.work4.title}</StyledWorkTitle>
         <StyledP>{WorksContent.work4.titleText}</StyledP>
         <Fade timeout={4000}><StyledDisplay src={display} alt="workDisplay" /></Fade>
-        <StyledButton href={WorksContent.work4.githubHref}>visit GitHub</StyledButton>
+        <StyledButton target="_blank" href={WorksContent.work4.githubHref}>visit GitHub</StyledButton>
         <StyledButton href={WorksContent.work4.websiteHref}>visit Website</StyledButton>
         <StyledContainer>
           <StyledSubTitle>Built with</StyledSubTitle>
@@ -81,7 +81,7 @@ class Portofolio extends React.Component {
         </StyledContainer>
         <StyledSubTitle>Overview</StyledSubTitle>
         <StyledP>{WorksContent.work4.overview}</StyledP>
-        <StyledButton className="back" onClick={this.onBtnClick}>BACK</StyledButton>
+        <StyledButton className="back" onClick={this.onBtnClick}>&lt;　BACK TO HOME</StyledButton>
       </div>
     )
   }

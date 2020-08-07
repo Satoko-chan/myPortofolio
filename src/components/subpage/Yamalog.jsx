@@ -70,8 +70,8 @@ class Yamalog extends React.Component {
         <StyledP>{WorksContent.work1.titleText}</StyledP>
         <hr style={{ width: "20px", margin: "3% auto" }} />
         <Fade timeout={4000}><StyledDisplay src={display} alt="workDisplay" /></Fade>
-        <StyledButton href={WorksContent.work1.githubHref}>visit GitHub</StyledButton>
-        <StyledButton href={WorksContent.work1.websiteHref}>visit Website</StyledButton>
+        <StyledButton target="_blank" href={WorksContent.work1.githubHref}>visit GitHub</StyledButton>
+        <StyledButton target="_blank" href={WorksContent.work1.websiteHref}>visit Website</StyledButton>
         <StyledContainer>
           <StyledSubTitle>Built with</StyledSubTitle>
           {WorksContent.work1.language.map((item, index) => (
