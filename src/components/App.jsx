@@ -30,7 +30,7 @@ function App() {
                         <Route path="/portofolio" component={Portofolio} />
                         <Route path="/yamalog" component={Yamalog} />
                         <Route path="/api" component={Api} />
-                        <Route path="/blog" component={() => {
+                        <Route path="/blog" return={() => {
                             window.location.href = 'https://github.com/Satoko-chan/Blog-Website';
                             return null;
                         }} />
