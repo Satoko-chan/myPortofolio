@@ -34,7 +34,7 @@ function App() {
                             window.location.href = 'https://github.com/Satoko-chan/Blog-Website';
                             return null;
                         }} /> */}
-                        <Route exact path="/blog" render={() => (window.location = "https://github.com/Satoko-chan/Blog-Website")} />
+                        <Route exact path="/blog" render={() => { (window.location = "https://github.com/Satoko-chan/Blog-Website") }} />
                     </Switch>
                 </ScrollToTop>
                 <Footer />
