@@ -30,14 +30,14 @@ function App() {
                         <Route path="/portofolio" component={Portofolio} />
                         <Route path="/yamalog" component={Yamalog} />
                         <Route path="/api" component={Api} />
-                        {/* <Route path="/blog" component={() => {
+                        <Route path="/blog" component={() => {
                             window.location.href = 'https://github.com/Satoko-chan/Blog-Website';
                             return null;
-                        }} /> */}
-                        <Route exact path="/blog" render={() => {
+                        }} />
+                        {/* <Route exact path="/blog" render={() => {
                             (window.location = "https://github.com/Satoko-chan/Blog-Website")
                             return null;
-                        }} />
+                        }} /> */}
                     </Switch>
                 </ScrollToTop>
                 <Footer />
