@@ -1,5 +1,5 @@
 import React from 'react';
-import display from "../asset/img/display.png";
+import display from "../asset/img/displayYamalog.png";
 import styled, { keyframes } from "styled-components";
 import { StyledButton } from "../asset/button";
 import Fade from 'react-reveal/Fade';
