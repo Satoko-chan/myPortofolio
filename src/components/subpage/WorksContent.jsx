@@ -27,7 +27,7 @@ export const WorksContent = {
         title: "Portofolio",
         titleText: "My very first portofolio using React.js",
         language: ["React.js", "Material-UI", "HTML5", "CSS3"],
-        overview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        overview: "This is my very first portfolio using React.js. I worked hard to make the design easy to see, easy to use, and beautiful.　This site is also using Material-UI (React components) to create a unified and dynamic design.　Since many images are used and startup is slow in some places, I would like to keep in mind the coding that moves quickly in the future.",
         githubHref: "https://github.com/Satoko-chan/myPortofolio",
         websiteHref: "https://im-satoko-wakasa.netlify.app/"
     },
