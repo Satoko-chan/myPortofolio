@@ -45,13 +45,17 @@ const StyledDisplay = styled.img`
 `;
 
 const StyledLang = styled.p`
-  padding: 12px 20px;
+  padding: 14px 18px;
   margin: 8px;
-  background-color: rgba(27, 34, 50, 0.9);
+  background-color: #9aa7b2;
+  border: #77838d;
+  box-shadow: 5px 5px #c7d0db;
   color: #fff;
-  border-radius: 5px;
   font-size: 16px;
-  display: inline-block;
+  display: inline-block; 
+  @media only screen and (min-width: 965px) {
+    margin: 15px;
+  }
 `;
 
 const StyledContainer = styled.div`
@@ -83,7 +87,7 @@ class Yamalog extends React.Component {
         <StyledSubTitle>Overview</StyledSubTitle>
         <StyledP>{WorksContent.work1.overview}</StyledP>
         <hr style={{ width: "20px", margin: "3% auto" }} />
-        <StyledButton className="back" onClick={this.onBtnClick}>&lt;　BACK TO HOME</StyledButton>
+        <StyledButton className="back" onClick={this.onBtnClick}>&lt; 　home</StyledButton>
       </div>
     )
   }
