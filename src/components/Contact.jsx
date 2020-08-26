@@ -18,6 +18,16 @@ const StyledFooter = styled.footer`
   background-position: center;
    //}
   height: 90vh;
+  ::before {
+  background: inherit;
+  content: '';
+  filter: blur(3px);
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+}
 `;
 
 const StyledContactText = styled.div`

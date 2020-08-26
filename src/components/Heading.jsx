@@ -16,6 +16,16 @@ const StyledHeader = styled.header`
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
+  ::before {
+  background: inherit;
+  content: '';
+  filter: blur(3px);
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+}
 `;
 
 const StyledArrow = styled.a`
@@ -35,7 +45,7 @@ const StyledArrow = styled.a`
 const StyledHeadingText = styled.div`
   color: white;
   padding: 8vh 4vh;
-  background-color:rgba(137, 201, 184, 0.8) ;
+  background-color:rgba(137, 201, 184, 0.9) ;
   position: absolute;
   top: 50%;
   left: 50%;
