@@ -15,17 +15,20 @@ const StyledHeader = styled.header`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
-  ::before {
-  background: inherit;
-  content: '';
-  filter: blur(3px);
-  position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-}
+  height: 80vh;
+    ::before {
+    background: inherit;
+    content: '';
+    filter: blur(3px);
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+  }
+  @media only screen and (min-width: 1140px) {
+    height: 90vh;
+  }
 `;
 
 const StyledArrow = styled.a`
@@ -33,13 +36,16 @@ const StyledArrow = styled.a`
   display: block;
   position: absolute;
   left: 48%; 
-  margin-top: 78vh;
+  margin-top: 68vh;
   width: 35px;
   height: 35px;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg) translate(0, 0);
   -webkit-transform: rotate(45deg);
   ${'' /* -ms-transform: translate(-50%); */}
+  @media only screen and (min-width: 1140px) {
+    margin-top: 78vh;
+  }
 `;
 
 const StyledHeadingText = styled.div`
