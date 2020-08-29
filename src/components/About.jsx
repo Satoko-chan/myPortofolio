@@ -45,7 +45,7 @@ function About() {
           <StyledSatokoImg src={satoko} alt="satokoImg" />
         </Grid>
         <Grid item xs={12} md={8} className="aboutText" style={{ fontSize: "3.5vh", fontWeight: "bold" }}>
-          <p>I’m Satoko, a 29-year-old Japanese Front-end engineer based in Bangkok, Thailand.</p>
+          <p>I’m Satoko, a 29-year-old Japanese front-end engineer based in Japan.</p>
           <br />
           <p>I enjoy creating the whole visual part of the web, keep improving my newly-learned skills and learning up-to-date technologies!</p>
           <br />
