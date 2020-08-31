@@ -82,6 +82,10 @@ const StyledLogo = styled.img`
   display: none;
   @media only screen and (min-width: 600px) {
     display: inline-block;
+    height: 60px;
+  }
+  @media only screen and (min-width: 1140px) {
+    display: inline-block;
     height: 13vh;
   }
 `;
