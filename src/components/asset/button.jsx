@@ -9,9 +9,8 @@ export const StyledButton = styled(Button)({
     color: 'white',
     height: 48,
     padding: '10px 80px',
-    margin: '20px',
-    fontSize: '2.2vh',
-    letterSpacing: '2px',
+    margin: '19px',
+    letterSpacing: '2.3px',
     '&:hover': {
         transform: '2s',
         background: 'linear-gradient(45deg, #f89093 10%, #f19e46 100%)',
