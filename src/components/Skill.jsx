@@ -10,7 +10,7 @@ const StyledGrid1 = styled(Grid)`
   background: linear-gradient(90deg, rgba(36,46,77,1) 0%, rgba(118,140,192,1) 100%);
   mix-blend-mode: multiply;
   border-radius: 50% 60% 50% 70% /60% 50% 70% 60%;
-  height: 43vh;
+  height: 300px;
 `;
 const StyledGrid2 = styled(Grid)`
   color: #fff;
@@ -18,7 +18,7 @@ const StyledGrid2 = styled(Grid)`
   background: linear-gradient(90deg, rgba(106,125,96,1) 0%, rgba(173,168,97,1) 100%);
   mix-blend-mode: multiply;
   border-radius: 80% 50% 60% 50%/50% 70%;
-  height: 35vh;
+  height: 250px;
 `;
 const StyledGrid3 = styled(Grid)`
   color: #fff;
@@ -26,7 +26,7 @@ const StyledGrid3 = styled(Grid)`
   background: linear-gradient(90deg, rgba(203,131,132,1) 0%, rgba(241,149,152,1) 100%);
   mix-blend-mode: multiply;
   border-radius: 40% 50% 40%/40% 50% 50% 50%;
-  height: 45xh;
+  height: 300px;
 `;
 
 function Skill() {

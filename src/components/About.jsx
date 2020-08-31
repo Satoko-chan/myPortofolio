@@ -21,8 +21,11 @@ const StyledAboutSatoko = styled.h3`
 
 const StyledSatokoImg = styled.img`
     width: 55%;
+  @media only screen and (min-width: 600px) {
+    width: 40%;
+  }
   @media only screen and (min-width: 965px) {
-    width: 90%;
+    width: 80%;
   }
 `;
 
@@ -44,7 +47,7 @@ function About() {
         <Grid item xs={12} md={4} className="aboutImg">
           <StyledSatokoImg src={satoko} alt="satokoImg" />
         </Grid>
-        <Grid item xs={12} md={8} className="aboutText" style={{ fontSize: "3.5vh", fontWeight: "bold" }}>
+        <Grid item xs={12} md={8} className="aboutText" style={{ fontSize: "3.5vh", fontWeight: "bold", marginTop: "20px" }}>
           <p>I’m Satoko, a 29-year-old Japanese front-end engineer based in Japan.</p>
           <br />
           <p>I enjoy creating the whole visual part of the web, keep improving my newly-learned skills and learning up-to-date technologies!</p>
