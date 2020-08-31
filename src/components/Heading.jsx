@@ -50,7 +50,7 @@ const StyledArrow = styled.a`
 
 const StyledHeadingText = styled.div`
   color: white;
-  padding: 6vh 8vh;
+  padding: 5vh 7.5vh;
   background-color:rgba(137, 201, 184, 0.9) ;
   position: absolute;
   top: 50%;
@@ -65,7 +65,7 @@ const StyledHeadingText = styled.div`
 
 const StyledHeadingH1 = styled.h1`
   font-size: 14vh;
-  line-height: 14vh;
+  line-height: 12vh;
   @media only screen and (min-width: 1140px) {
     font-size: 18vh;
     }
@@ -79,7 +79,9 @@ const StyledHeadingH2 = styled.h2`
 `;
 
 const StyledLogo = styled.img`
-  display: none;
+  ${'' /* display: none; */}
+  display: inline-block;
+  height: 9vh;
   @media only screen and (min-width: 600px) {
     display: inline-block;
     height: 12vh;

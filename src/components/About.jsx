@@ -12,10 +12,11 @@ import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 
 const StyledAboutSatoko = styled.h3`
     font-size: 10vh;
-    padding-bottom: 0.5em;
+    padding-bottom: 1vh;
   @media only screen and (min-width: 965px) {
-    font-size: 20vh;
+    font-size: 18vh;
     letter-spacing: 1.5vh;
+    padding-bottom: 2vh;
   }
 `;
 
@@ -47,7 +48,7 @@ function About() {
         <Grid item xs={12} md={4} className="aboutImg">
           <StyledSatokoImg src={satoko} alt="satokoImg" />
         </Grid>
-        <Grid item xs={12} md={8} className="aboutText" style={{ fontSize: "3.5vh", fontWeight: "bold", marginTop: "20px" }}>
+        <Grid item xs={12} md={8} className="aboutText" style={{ fontSize: "3.5vh", fontWeight: "bold" }}>
           <p>I’m Satoko, a 29-year-old Japanese front-end engineer based in Japan.</p>
           <br />
           <p>I enjoy creating the whole visual part of the web, keep improving my newly-learned skills and learning up-to-date technologies!</p>
