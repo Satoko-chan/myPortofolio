@@ -19,7 +19,6 @@
 
   h2 {
     font-family: 'Sacramento', cursive;
-    /* font-family: 'Quicksand', sans-serif; */
     font-size: 6vh;
     font-weight: lighter;
   }
@@ -90,13 +89,11 @@
 #works {
   background-color: #f3f0f1;
   padding: 12% 0;
-  /* position: relative; */
 }
 
 /* ================= Contact ================= */
 
 #contact {
-  height: 40em;
   background-size:cover;
   position: relative;
   color: #717171;

@@ -17,21 +17,24 @@ const StyledFooter = styled.footer`
   background-repeat: no-repeat;
   background-position: center;
    //}
-  height: 90vh;
+  height: 75vh;
   ::before {
-  background: inherit;
-  content: '';
-  filter: blur(3px);
-  position: absolute;
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
-}
+    background: inherit;
+    content: '';
+    filter: blur(3px);
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+  }
+  @media only screen and (min-width: 1140px) {
+    height: 90vh;
+  }
 `;
 
 const StyledContactText = styled.div`
-  padding: 6vh 0.5vh;
+  padding: 6vh 0.3vh;
   background-color:#fff ;
   position: absolute;
   top: 50%;
@@ -45,7 +48,7 @@ const StyledContactText = styled.div`
 `;
 
 const StyledEmailFont = styled.h3`
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   @media only screen and (min-width: 1140px) {
     font-size: 3.2vh;
   }
