@@ -17,12 +17,12 @@ const StyledSatoko = styled(Link)`
 const StyledLink = styled(Link)`
     font-family: 'Megrim', cursive;
     float: right;
-    padding: 0 10px;
+    margin: 0 10px;
     line-height: 48px;
     list-style: none;
     color: #000;
     @media only screen and (min-width: 1140px) {
-      padding: 0 15px;
+      margin: 0 15px;
     }
 `;
 
