@@ -5,7 +5,7 @@ import Fade from '@material-ui/core/Fade';
 import Grow from '@material-ui/core/Grow';
 import { HashLink as Link } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import satokoGirl from "./asset/img/satokoGirl2.png"
+import satokoLogo from "./asset/img/topLogo.png"
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -64,8 +64,8 @@ const StyledHeadingText = styled.div`
 `;
 
 const StyledHeadingH1 = styled.h1`
-  font-size: 15vh;
-  line-height: 15vh;
+  font-size: 14vh;
+  line-height: 14vh;
   @media only screen and (min-width: 1140px) {
     font-size: 18vh;
     }
@@ -76,6 +76,14 @@ const StyledHeadingH2 = styled.h2`
   @media only screen and (min-width: 1140px) {
     font-size: 8vh;
     }
+`;
+
+const StyledLogo = styled.img`
+  display: none;
+  @media only screen and (min-width: 600px) {
+    display: inline-block;
+    height: 13vh;
+  }
 `;
 
 const Animation = keyframes`
@@ -129,7 +137,7 @@ function Heading() {
           <Fade in={true} timeout={1500}>
             <StyledHeadingText>
               <Fade in={true} timeout={2000}><StyledHeadingH2>I'm</StyledHeadingH2></Fade>
-              <Grow in={true} timeout={3000}><StyledHeadingH1>Satoko.</StyledHeadingH1></Grow>
+              <Grow in={true} timeout={3000}><StyledHeadingH1>Satoko<StyledLogo src={satokoLogo} alt="satokoLogo" /></StyledHeadingH1></Grow>
               {/* <Grow><StyledSatokoGirl src={satokoGirl} /></Grow> */}
               <Fade in={true} timeout={5000}><StyledHeadingH2>a Front-end Web Developer</StyledHeadingH2></Fade>
             </StyledHeadingText>
