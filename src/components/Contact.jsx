@@ -17,7 +17,7 @@ const StyledFooter = styled.footer`
   background-repeat: no-repeat;
   background-position: center;
    //}
-  height: 75vh;
+  height: 480px;
   ::before {
     background: inherit;
     content: '';
@@ -29,12 +29,12 @@ const StyledFooter = styled.footer`
     left: -3px;
   }
   @media only screen and (min-width: 1140px) {
-    height: 90vh;
+    height: 580px;
   }
 `;
 
 const StyledContactText = styled.div`
-  padding: 6vh 0.3vh;
+  padding: 30px 5px;
   background-color:#fff ;
   position: absolute;
   top: 50%;
@@ -43,20 +43,20 @@ const StyledContactText = styled.div`
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   @media only screen and (min-width: 576px) {
-    padding: 7vh 4vh;
+    padding: 40px 30px;
   }
 `;
 
 const StyledEmailFont = styled.h3`
-  font-size: 2.2vh;
+  font-size: 15px;
   @media only screen and (min-width: 576px) {
-    font-size: 3.2vh;
+    font-size: 20px;
   }
 `;
 
 const StyledLink = styled.a`
   text-decoration: none;
-  margin: 5vh 2vh;
+  margin: 20px 10px;
   color: #717171;
   display: inline-block;
 `;
