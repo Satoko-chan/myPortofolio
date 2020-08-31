@@ -50,7 +50,7 @@ const StyledArrow = styled.a`
 
 const StyledHeadingText = styled.div`
   color: white;
-  padding: 8vh 4vh;
+  padding: 6vh 8vh;
   background-color:rgba(137, 201, 184, 0.9) ;
   position: absolute;
   top: 50%;
@@ -59,7 +59,7 @@ const StyledHeadingText = styled.div`
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   @media only screen and (min-width: 1140px) {
-    padding: 8vh 4vh;
+    padding: 8vh;
   }
 `;
 
