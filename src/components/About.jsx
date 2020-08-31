@@ -20,7 +20,7 @@ const StyledAboutSatoko = styled.h3`
 `;
 
 const StyledSatokoImg = styled.img`
-    width: 60%;
+    width: 55%;
   @media only screen and (min-width: 965px) {
     width: 100%;
   }

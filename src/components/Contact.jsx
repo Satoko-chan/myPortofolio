@@ -42,14 +42,14 @@ const StyledContactText = styled.div`
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  @media only screen and (min-width: 1140px) {
+  @media only screen and (min-width: 576px) {
     padding: 7vh 4vh;
   }
 `;
 
 const StyledEmailFont = styled.h3`
   font-size: 2.2vh;
-  @media only screen and (min-width: 1140px) {
+  @media only screen and (min-width: 576px) {
     font-size: 3.2vh;
   }
 `;
