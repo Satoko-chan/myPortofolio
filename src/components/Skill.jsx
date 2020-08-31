@@ -17,7 +17,7 @@ const StyledGrid2 = styled(Grid)`
   background: rgb(106,125,96);
   background: linear-gradient(90deg, rgba(106,125,96,1) 0%, rgba(173,168,97,1) 100%);
   mix-blend-mode: multiply;
-  border-radius: 80% 30% 50% 50%/50% 70%;
+  border-radius: 80% 50% 60% 50%/50% 70%;
   height: 35vh;
 `;
 const StyledGrid3 = styled(Grid)`
@@ -46,7 +46,7 @@ function Skill() {
                     </Roll>
                 </StyledGrid1>
 
-                <StyledGrid2 item xs={12} sm={4} style={{ padding: "60px 20px" }}>
+                <StyledGrid2 item xs={12} sm={4} style={{ padding: "68px 20px" }}>
                     <Roll up timeout={2000}>
                         <h3>Frameworks</h3>
                         <p>Ruby on Rails</p>
