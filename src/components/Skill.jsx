@@ -37,7 +37,7 @@ function Skill() {
             <Grid container spacing={1}>
                 <StyledGrid1 item xs={12} sm={4} style={{ padding: "60px 38px" }}>
                     <Roll left>
-                        <h3 >Frond-end</h3>
+                        <h3 >Front-end</h3>
                         <p>HTML5</p>
                         <p>CSS3/SCSS</p>
                         <p>JavaScript</p>
