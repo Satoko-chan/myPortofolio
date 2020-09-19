@@ -51,7 +51,7 @@ const StyledArrow = styled.a`
 const StyledHeadingText = styled.div`
   color: white;
   padding: 5vh 7.5vh;
-  background-color:rgba(137, 201, 184, 0.9) ;
+  background-color:rgba(108, 191, 170, 0.9) ;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,8 +79,8 @@ const StyledHeadingH2 = styled.h2`
 `;
 
 const StyledLogo = styled.img`
-  ${'' /* display: none; */}
-  display: inline-block;
+  display: none;
+  ${'' /* display: inline-block; */}
   height: 9vh;
   @media only screen and (min-width: 600px) {
     display: inline-block;
