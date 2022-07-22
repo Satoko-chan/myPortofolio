@@ -75,9 +75,9 @@ function Contact() {
         <p>Drop me a line:</p>
         <br />
         <br />
-        <Fade up>
-          <StyledEmailFont><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></StyledEmailFont>
-        </Fade>
+//         <Fade up>
+//           <StyledEmailFont><StyledLink href="mailto:satoko.wakasa.2020@gmail.com">satoko.wakasa.2020@gmail.com</StyledLink></StyledEmailFont>
+//         </Fade>
         <StyledLink href="https://github.com/Satoko-chan">
           <GitHubIcon />
         </StyledLink>
